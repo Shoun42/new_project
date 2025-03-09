@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:new_project/loginScreen.dart';
 import 'package:new_project/registrationScreen.dart';
 import 'package:new_project/splashScreen.dart';
-import 'emailVerifacationScreen.dart';
 import 'pinVerifacationScreen.dart';
 import 'setPasswordScreen.dart';
+import 'emailVerifacationScreen.dart';
+
 void main (){
   runApp(const MyApp());
 }
@@ -15,11 +16,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bk Gas',
-      initialRoute: '/login',
+      initialRoute: '/pinVerifacation',
       routes: {
-        '/':(context)=> splashScreen(),
-        '/login':(context)=> loginScreen(),
+        '/':(context)=> SplashScreen(),
         '/registration':(context)=> registrationScreen(),
+        '/login':(context)=> loginScreen(),
         '/emailVerifacation':(context)=> emailVerifacationScreen(),
         '/pinVerifacation':(context)=> pinVerifacationScreen(),
         '/setPassword':(context)=> setPasswordScreen(),

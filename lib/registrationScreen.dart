@@ -12,10 +12,12 @@ class _registrationScreenState extends State<registrationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       body: Stack(
         children: [
           ScreenBackground(context),
-          Container(
+          SingleChildScrollView(
+          child: Padding(
             padding: EdgeInsets.all(30),
             child: Column(
               mainAxisAlignment:MainAxisAlignment.center,
@@ -41,8 +43,10 @@ class _registrationScreenState extends State<registrationScreen> {
                   onPressed: () {},
                 ),)
 
+
               ],
             ),
+          )
           )
         ],
 

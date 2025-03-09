@@ -38,6 +38,7 @@ dependencies:
   http: ^1.3.0
   fluttertoast: ^8.2.12
   pin_code_fields: ^8.0.1
+  animated_splash_screen: ^1.3.0
 
 
 dev_dependencies:
@@ -66,6 +67,7 @@ flutter:
     - asset/images/Splash.png
     - asset/images/brackground.jpg
     - asset/images/rider.png
+    - asset/images/taxt.png
   fonts:
     - family: poppins
       fonts:
