@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'style/style.dart';
+import '../style/style.dart';
 
 class emailVerifacationScreen extends StatefulWidget {
   const emailVerifacationScreen({super.key});

@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:new_project/style/style.dart';
 
-class loginScreen extends StatefulWidget {
-  const loginScreen({super.key});
+import '../style/style.dart';
+
+class setPasswordScreen extends StatefulWidget {
+  const setPasswordScreen({super.key});
 
   @override
-  State<loginScreen> createState() => _loginScreenState();
+  State<setPasswordScreen> createState() => _setPasswordScreenState();
 }
 
-class _loginScreenState extends State<loginScreen> {
+class _setPasswordScreenState extends State<setPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,9 +31,9 @@ class _loginScreenState extends State<loginScreen> {
                 TextFormField(decoration: AppInputDecoration('Password'),),
                 SizedBox(height: 20,),
                 Container(child: ElevatedButton(
-                    style: AppButtonStyle(),
-                    child:PrimaryButtonChild('Login'),
-                    onPressed: () {},
+                  style: AppButtonStyle(),
+                  child:PrimaryButtonChild('Login'),
+                  onPressed: () {},
                 ),)
 
               ],

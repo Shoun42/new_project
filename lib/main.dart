@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:new_project/loginScreen.dart';
-import 'package:new_project/registrationScreen.dart';
-import 'package:new_project/splashScreen.dart';
-import 'pinVerifacationScreen.dart';
-import 'setPasswordScreen.dart';
-import 'emailVerifacationScreen.dart';
+import 'package:new_project/onboarding/loginScreen.dart';
+import 'package:new_project/onboarding/registrationScreen.dart';
+import 'package:new_project/onboarding/splashScreen.dart';
+import 'onboarding/pinVerifacationScreen.dart';
+import 'onboarding/setPasswordScreen.dart';
+import 'onboarding/emailVerifacationScreen.dart';
 
 void main (){
   runApp(const MyApp());
@@ -15,8 +15,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bk Gas',
-      initialRoute: '/pinVerifacation',
+      initialRoute: '/',
       routes: {
         '/':(context)=> SplashScreen(),
         '/registration':(context)=> registrationScreen(),

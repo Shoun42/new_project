@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'registrationScreen.dart';
-import 'style/style.dart';
+import '../style/style.dart';
 
 
 class SplashScreen extends StatefulWidget {
